@@ -2,23 +2,35 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlin.concurrent.thread
-//
-fun main2(args: Array<String>) {
-    repeat(100_000) {
-        thread {
-            println("thread $it")
-//            Thread.sleep(1L)
-//            print(".")
-        }
-    }
+
+
+val seq = sequence {
+    println("Yielding 1")
+    yield(1)
+    println("continuing")
+    println("Yielding 2")
+    yield(2)
+    println("Yielding 3")
+    yield(3)
 }
 
-fun main() = runBlocking {
-    repeat(100_000) {
-        launch {
-            println("Coroutine $this")
-//            delay(1000L)
-//            print(".")
-        }
-    }
+fun main() {
+    val iterator = seq.iterator()
+    println("Starting")
+
+    val f = iterator.next()
+    println("First element is $f.")
+
+    val s = iterator.next()
+    println("Second element is $s")
+
+    val t = iterator.next()
+    println("Third element is $t.")
+
+//    val ft = iterator.next()
+//    println("Fourth element is $ft. Has next is ${iterator.hasNext()}")
+
+//    for (num in seq) {
+//        println("Next number is $num")
+//    }
 }
