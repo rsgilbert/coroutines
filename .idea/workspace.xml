@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f67fc48-24db-4309-8413-250250e03c1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Resume.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ResumeWithException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,16 +52,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.ResumeKt">
+  <component name="RunManager" selected="Kotlin.ResumeWithExceptionKt">
     <configuration name="FibonacciKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FibonacciKt" />
-      <module name="coroutines" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomNumbersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RandomNumbersKt" />
       <module name="coroutines" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,6 +74,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ResumeWithExceptionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ResumeWithExceptionKt" />
+      <module name="coroutines" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SuspendKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SuspendKt" />
       <module name="coroutines" />
@@ -90,11 +90,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ResumeWithExceptionKt" />
         <item itemvalue="Kotlin.ResumeKt" />
         <item itemvalue="Kotlin.SuspendKt" />
         <item itemvalue="Kotlin.FibonacciKt" />
         <item itemvalue="Kotlin.RandomStringsKt" />
-        <item itemvalue="Kotlin.RandomNumbersKt" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712722260437</updated>
-      <workItem from="1712722261490" duration="12693000" />
+      <workItem from="1712722261490" duration="14526000" />
     </task>
     <servers />
   </component>
@@ -123,5 +123,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/ResumeWithException.kt</url>
+          <line>53</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
