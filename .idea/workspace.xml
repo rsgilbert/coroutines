@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f67fc48-24db-4309-8413-250250e03c1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FetchUsers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Fibonacci.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RandomNumbers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RandomStrings.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Suspend.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.FibonacciKt">
+  <component name="RunManager" selected="Kotlin.SuspendKt">
     <configuration name="FibonacciKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FibonacciKt" />
       <module name="coroutines" />
@@ -85,8 +81,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SuspendKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SuspendKt" />
+      <module name="coroutines" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.SuspendKt" />
         <item itemvalue="Kotlin.FibonacciKt" />
         <item itemvalue="Kotlin.RandomStringsKt" />
         <item itemvalue="Kotlin.RandomNumbersKt" />
@@ -102,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712722260437</updated>
-      <workItem from="1712722261490" duration="8606000" />
+      <workItem from="1712722261490" duration="10988000" />
     </task>
     <servers />
   </component>
