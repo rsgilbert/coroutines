@@ -1,7 +1,24 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import kotlin.concurrent.thread
+//
+fun main2(args: Array<String>) {
+    repeat(100_000) {
+        thread {
+            println("thread $it")
+//            Thread.sleep(1L)
+//            print(".")
+        }
+    }
+}
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() = runBlocking {
+    repeat(100_000) {
+        launch {
+            println("Coroutine $this")
+//            delay(1000L)
+//            print(".")
+        }
+    }
 }
