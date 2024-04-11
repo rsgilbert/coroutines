@@ -8,7 +8,7 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 
-private val executor: ScheduledExecutorService =
+val executor: ScheduledExecutorService =
     Executors.newSingleThreadScheduledExecutor {
         val t= Thread(it, "scheduler")
             t.apply { isDaemon = true }

@@ -5,6 +5,7 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 suspend fun main1() {
+    suspendCoroutine<Unit> {  }
 
     val i: Int = suspendCoroutine<Int> { cont ->
         cont.resume(42)
