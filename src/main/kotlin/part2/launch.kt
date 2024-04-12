@@ -1,6 +1,7 @@
 package part2
 
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.concurrent.thread
@@ -24,7 +25,7 @@ fun main() {
         println("third world")
     }
     println("Hello")
-    Thread.sleep(1010)
+    Thread.sleep(1050)
 
 }
 

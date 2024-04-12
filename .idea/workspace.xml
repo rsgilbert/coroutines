@@ -5,40 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f67fc48-24db-4309-8413-250250e03c1e" name="Changes" comment="Added lib folder. Moved code to part1 package">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jetbrains_kotlinx_coroutines_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/annotations-23.0.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/annotations-23.0.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/annotations-23.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-1.8.20-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-1.8.20-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-1.8.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-common-1.8.20-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-common-1.8.20-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-common-1.8.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk7-1.8.20-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk7-1.8.20-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk7-1.8.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk8-1.8.20-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk8-1.8.20-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk8-1.8.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlinx-coroutines-core-1.7.3-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlinx-coroutines-core-1.7.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlinx-coroutines-core-jvm-1.7.3-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlinx-coroutines-core-jvm-1.7.3-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kotlinx-coroutines-core-jvm-1.7.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/launch.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/runBlocking.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/async.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coroutines.iml" beforeDir="false" afterPath="$PROJECT_DIR$/coroutines.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FetchUsers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/FetchUsers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Fibonacci.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/Fibonacci.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/HowItWorks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/HowItWorks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RandomNumbers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/RandomNumbers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RandomStrings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/RandomStrings.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Resume.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/Resume.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ResumeWithException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/ResumeWithException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Suspend.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part1/Suspend.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/part2/launch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part2/launch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/part2/runBlocking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part2/runBlocking.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +60,14 @@
       <recent name="D:\Gilbert\kotlin\coroutines\src\main\kotlin\part1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.LaunchKt">
+  <component name="RunManager" selected="Kotlin.RunBlockingKt">
+    <configuration name="AsyncKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.AsyncKt" />
+      <module name="coroutines" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HowItWorksKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HowItWorksKt" />
       <module name="coroutines" />
@@ -112,13 +89,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResumeWithExceptionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="part1.ResumeWithExceptionKt" />
-      <module name="coroutines" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RunBlockingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="part2.RunBlockingKt" />
       <module name="coroutines" />
@@ -128,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.LaunchKt" />
         <item itemvalue="Kotlin.RunBlockingKt" />
+        <item itemvalue="Kotlin.AsyncKt" />
+        <item itemvalue="Kotlin.LaunchKt" />
         <item itemvalue="Kotlin.ResumeKt" />
         <item itemvalue="Kotlin.HowItWorksKt" />
-        <item itemvalue="Kotlin.ResumeWithExceptionKt" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712722260437</updated>
       <workItem from="1712722261490" duration="20497000" />
-      <workItem from="1712858404044" duration="3492000" />
+      <workItem from="1712858404044" duration="8900000" />
     </task>
     <servers />
   </component>

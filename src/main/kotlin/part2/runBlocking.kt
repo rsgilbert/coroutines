@@ -1,9 +1,6 @@
 package part2
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 fun main3() {
     println("Started")
@@ -78,7 +75,7 @@ fun main7() {
     }
 }
 
-suspend fun main() {
+suspend fun main9() {
     GlobalScope.launch {
         println("launched 1")
         delay(50)
@@ -99,4 +96,83 @@ suspend fun main() {
 
     println("Hello")
     delay(80)
+}
+
+fun main10() = runBlocking {
+    this.launch {
+        delay(80)
+        println("world 1")
+    }
+
+    launch {
+        delay(20)
+        println("world 2")
+    }
+
+    launch {
+        delay(400)
+        println("world 3")
+    }
+
+    runBlocking {
+        println("inner run blocking")
+        delay(500)
+        println("inner delayed")
+    }
+    println("hello")
+}
+
+fun main11() = runBlocking {
+    println("Start")
+
+    launch {
+        println("launch 1")
+        delay(100)
+        runBlocking {
+            println("launch 1 run blocking")
+            delay(1000)
+            println("finished launch 1 run blocking")
+        }
+        println("launch 1 done")
+    }
+
+    launch {
+        println("launch 2")
+        delay(100)
+        runBlocking {
+            println("launch 2 run blocking")
+            delay(1000)
+            println("finished launch 2 run blocking")
+        }
+        println("launch 2 done")
+    }
+
+    println("End")
+}
+
+fun main12() = runBlocking {
+    val articles = getArticles(this)
+    println(articles)
+
+    println("Done")
+}
+
+suspend fun getArticles(sc: CoroutineScope) : String {
+    val v = sc.async {
+        delay(1000)
+          "First article here"
+    }
+    return v.await()
+//    return coroutineScope {
+//        delay(1500)
+//      return  "First article"
+//    }
+}
+
+suspend fun main() : Unit = coroutineScope {
+    launch {
+        delay(400)
+        println("World")
+    }
+    print("Hello ")
 }
