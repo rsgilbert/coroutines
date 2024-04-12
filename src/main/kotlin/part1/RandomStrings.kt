@@ -1,3 +1,5 @@
+package part1
+
 import kotlin.random.Random
 
 fun randomUniqueStrings(

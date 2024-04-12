@@ -1,3 +1,5 @@
+package part1
+
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.suspendCancellableCoroutine
 import java.lang.Exception
@@ -27,7 +29,7 @@ suspend fun main4() {
     println("End")
 }
 suspend fun requestUser2() : User {
-    return suspendCancellableCoroutine<User> {cont ->
+    return suspendCancellableCoroutine<User> { cont ->
         val v  = System.currentTimeMillis().toInt()
         if(v % 2 == 0) {
             cont.resume(User(v.toString(), v.toString()))
@@ -59,7 +61,7 @@ suspend fun main() {
         Thread.sleep(1000)
         println("thread resuming")
         continuation?.resume(Unit)
-        println("Resumed continuation")
+        println("Resumed part1.getContinuation")
         println("First thread ends here")
     }
 

@@ -1,7 +1,4 @@
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import kotlin.concurrent.thread
+package part1
 
 
 val seq = sequence {
@@ -30,7 +27,7 @@ fun main() {
 //    val ft = iterator.next()
 //    println("Fourth element is $ft. Has next is ${iterator.hasNext()}")
 
-//    for (num in seq) {
+//    for (num in part1.getSeq) {
 //        println("Next number is $num")
 //    }
 }

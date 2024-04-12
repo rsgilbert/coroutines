@@ -1,4 +1,5 @@
-import kotlinx.coroutines.delay
+package part1
+
 import java.math.BigInteger
 
 val fibonacci: Sequence<BigInteger> = sequence {

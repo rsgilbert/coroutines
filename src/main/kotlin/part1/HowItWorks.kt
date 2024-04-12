@@ -1,12 +1,12 @@
-import kotlinx.coroutines.delay
+package part1
+
 import java.util.concurrent.TimeUnit
 import kotlin.coroutines.Continuation
 import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.resume
-import kotlin.coroutines.suspendCoroutine
 
-val COROUTINE_SUSPENDED = "COROUTINE_SUSPENDED"
-//suspend fun myFunction() {
+val COROUTINE_SUSPENDED = "part1.getCOROUTINE_SUSPENDED"
+//suspend fun part1.myFunction() {
 //    println("Before")
 //
 //    delay(1000)
@@ -30,7 +30,7 @@ fun myDelay2(timeMillis: Long, continuation: Continuation<Unit>): Any {
     }
 
     if(continuation.label == 1) {
-        println("myDelay2 finished")
+        println("part1.myDelay2 finished")
         return Unit
     }
 
@@ -45,8 +45,8 @@ fun myFunction(continuation: Continuation<Unit>): Any {
 
         continuation.label = 1
 
-        if (myDelay2(1000, continuation) == "COROUTINE_SUSPENDED") {
-            return "COROUTINE_SUSPENDED"
+        if (myDelay2(1000, continuation) == "part1.getCOROUTINE_SUSPENDED") {
+            return "part1.getCOROUTINE_SUSPENDED"
         }
 
     }
@@ -70,7 +70,7 @@ class MyFunctionContinuation(private val completion: Continuation<Unit>) : Conti
         this.result = result
         val res = try {
             val r = myFunction(this)
-            if (r == "COROUTINE_SUSPENDED") return
+            if (r == "part1.getCOROUTINE_SUSPENDED") return
             Result.success(r as Unit)
         } catch (e: Throwable) {
             Result.failure(e)
@@ -93,7 +93,7 @@ class MyDelayContinuation(private val completion: Continuation<Unit>) : Continua
         this.result = result
         val res = try {
             val r = myDelay2(0, this)
-            if (r == "COROUTINE_SUSPENDED") return
+            if (r == "part1.getCOROUTINE_SUSPENDED") return
             Result.success(r as Unit)
         } catch (e: Throwable) {
             Result.failure(e)
