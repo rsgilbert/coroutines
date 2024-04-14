@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f67fc48-24db-4309-8413-250250e03c1e" name="Changes" comment="Added lib folder. Moved code to part1 package">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/context.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/injection.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/jobs.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/part2/runBlocking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part2/runBlocking.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <recent name="D:\Gilbert\kotlin\coroutines\src\main\kotlin\part1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.InjectionKt">
+  <component name="RunManager" selected="Kotlin.JobsKt">
     <configuration name="AsyncKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="part2.AsyncKt" />
       <module name="coroutines" />
@@ -82,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaunchKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="part2.LaunchKt" />
+    <configuration name="JobsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.JobsKt" />
       <module name="coroutines" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.JobsKt" />
         <item itemvalue="Kotlin.InjectionKt" />
         <item itemvalue="Kotlin.ContextKt" />
         <item itemvalue="Kotlin.RunBlockingKt" />
         <item itemvalue="Kotlin.AsyncKt" />
-        <item itemvalue="Kotlin.LaunchKt" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +115,7 @@
       <workItem from="1712722261490" duration="20497000" />
       <workItem from="1712858404044" duration="9306000" />
       <workItem from="1712943313290" duration="3895000" />
-      <workItem from="1713073011818" duration="1520000" />
+      <workItem from="1713073011818" duration="8821000" />
     </task>
     <servers />
   </component>
