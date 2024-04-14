@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f67fc48-24db-4309-8413-250250e03c1e" name="Changes" comment="Added lib folder. Moved code to part1 package">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/async.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/context.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/part2/injection.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/part2/launch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part2/launch.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/part2/runBlocking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/part2/runBlocking.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,34 +33,34 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Gilbert\kotlin\coroutines\src\main\kotlin\part1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.RunBlockingKt">
+  <component name="RunManager" selected="Kotlin.InjectionKt">
     <configuration name="AsyncKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="part2.AsyncKt" />
       <module name="coroutines" />
@@ -68,8 +68,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HowItWorksKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HowItWorksKt" />
+    <configuration name="ContextKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.ContextKt" />
+      <module name="coroutines" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InjectionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.InjectionKt" />
       <module name="coroutines" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -77,13 +84,6 @@
     </configuration>
     <configuration name="LaunchKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="part2.LaunchKt" />
-      <module name="coroutines" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResumeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="part1.ResumeKt" />
       <module name="coroutines" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.InjectionKt" />
+        <item itemvalue="Kotlin.ContextKt" />
         <item itemvalue="Kotlin.RunBlockingKt" />
         <item itemvalue="Kotlin.AsyncKt" />
         <item itemvalue="Kotlin.LaunchKt" />
-        <item itemvalue="Kotlin.ResumeKt" />
-        <item itemvalue="Kotlin.HowItWorksKt" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +115,9 @@
       <option name="presentableId" value="Default" />
       <updated>1712722260437</updated>
       <workItem from="1712722261490" duration="20497000" />
-      <workItem from="1712858404044" duration="8900000" />
+      <workItem from="1712858404044" duration="9306000" />
+      <workItem from="1712943313290" duration="3895000" />
+      <workItem from="1713073011818" duration="1520000" />
     </task>
     <servers />
   </component>

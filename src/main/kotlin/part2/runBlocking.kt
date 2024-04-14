@@ -1,6 +1,7 @@
 package part2
 
 import kotlinx.coroutines.*
+import kotlin.coroutines.Continuation
 
 fun main3() {
     println("Started")
@@ -170,6 +171,11 @@ suspend fun getArticles(sc: CoroutineScope) : String {
 }
 
 suspend fun main() : Unit = coroutineScope {
+
+
+    Job()
+
+    CoroutineName
     launch {
         delay(400)
         println("World")
